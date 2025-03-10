@@ -1,3 +1,9 @@
+/* Reset some basic elements */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,17 +12,38 @@ body {
     color: #333;
 }
 
-header {
+/* Navigation Bar */
+nav {
     background-color: #007bff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
     color: white;
-    text-align: center;
-    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-header h1 {
-    margin: 0;
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffcc00;  /* Hover color */
 }
 
+/* Section Styling */
 section {
     padding: 20px;
     margin: 20px;
@@ -29,6 +56,23 @@ section h2 {
     color: #007bff;
 }
 
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
@@ -36,11 +80,31 @@ footer {
     color: white;
 }
 
-a {
+footer a {
+    color: #ffcc00;
     text-decoration: none;
-    color: #007bff;
 }
 
-a:hover {
+footer a:hover {
     text-decoration: underline;
+}
+
+/* Home Section */
+#home {
+    background-color: #e0f7fa;
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff;
+}
+
+/* Education Section */
+#education {
+    background-color: #f1f8e9;
+}
+
+/* Publications Section */
+#publications {
+    background-color: #fce4ec;
 }

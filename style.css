@@ -104,6 +104,11 @@ footer a:hover {
     background-color: #f1f8e9;
 }
 
+/* Teaching Section */
+#teaching {
+    background-color: #ffeb3b;
+}
+
 /* Publications Section */
 #publications {
     background-color: #fce4ec;
